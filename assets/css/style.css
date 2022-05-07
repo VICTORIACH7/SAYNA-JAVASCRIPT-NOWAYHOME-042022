@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;500;700;800;900&display=swap');
+@font-face {
+    font-family: 'far_from_homecomingregular';
+    src: url(../police/Far-From-Homecoming-Updated.otf) format('OpenType');
+}
+
+body {
+    font-family: Montserrat, sans-serif;
+    font-weight: 200;
+}
+
+.font-spider {
+    font-family: 'far_from_homecomingregular', sans-serif;
+}
+
+
+/*
+ * PRINCIPE MOBILE FIRST 
+ */
+
+:root {
+    --primary-ad-color: #b11313;
+    --black-ad-color: #000000;
+    --white-ad-color: #ffffff;
+    --blue-color: #114c92;
+}
+
+
+/* redefinition de .container */
+
+.container {
+    max-width: 90vw;
+    margin: 0 auto;
+}
+
+
+/* header */
+
+header {
+    top: 0rem;
+    width: 100%;
+    z-index: 10;
+    position: absolute;
+}
+
+header .navbar-nav li {
+    padding-left: 2rem;
+}
+
+header .navbar-nav li a {
+    font-weight: 500;
+    font-size: 1.25rem;
+    text-decoration: none;
+    color: var(--white-ad-color);
+}
+
+.navbar-nav .nav-item .nav-link {
+    padding: 0;
+}
+
+.navbar-toggler-icon {
+    background-image: url("dots.svg");
+}
+
+
+/* Footer */
+
+footer {
+    background-color: var(--black-ad-color);
+}
+
+footer .nav-link {
+    color: var(--white-ad-color);
+}
+
+footer .list-inline-item a {
+    background-color: var(--primary-ad-color);
+}
+
+footer .list-inline-item a .ic-1 {
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.form-select {
+    width: 120px;
+    border-radius: 50px;
+    background-color: var(--primary-ad-color);
+    color: var(--white-ad-color);
+    border: 3px solid var(--white-ad-color);
+    background-image: url("select-arrow.svg") !important;
+}
+
+.footer-nav {
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+#hero {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    min-height: 40vw;
+    max-height: 400px;
+    padding-top: 5rem;
+    align-items: center;
+    height: auto !important;
+    background-repeat: no-repeat;
+}
+
+#hero .titre {
+    font-family: 'far_from_homecomingregular';
+    color: var(--white-ad-color);
+    font-size: clamp(2rem, 5vw, 3rem);
+    font-weight: 100;
+    left: -60%;
+    position: relative;
+    display: inline-block;
+}
+
+#hero .description {
+    color: var(--white-ad-color);
+    font-weight: bold;
+    font-size: clamp(1.5em, 3vw, 3em);
+    opacity: 0;
+}
+
+.button1 {
+    background-color: var(--white-ad-color);
+    color: var(--primary-ad-color);
+    border-radius: 40px;
+    padding: 15px 20px;
+}
+
+.button2 {
+    border: var(--white-ad-color) 2px solid;
+    color: var(--white-ad-color);
+    border-radius: 40px;
+    padding: 15px 20px;
+}
+
+.button3 {
+    border: var(--white-ad-color) 2px solid;
+    background-color: transparent;
+    color: var(--white-ad-color);
+    border-radius: 40px;
+    padding: 15px 20px;
+}
+
+h1 {
+    font-family: 'far_from_homecomingregular';
+}
+
+h2.font-spider {
+    position: relative;
+    left: -100%
+}
+
+
+/* definition/description list used on hero.html an adversaire.html */
+
+dl dt,
+dl dd {
+    display: inline;
+}
+
+dl dd::after {
+    content: "\a";
+    white-space: pre-line;
+}
+
+.card {
+    padding: 0;
+    border: none;
+    background-color: inherit;
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 80vw;
+    }
+    header {
+        top: 0;
+        width: 100%;
+        background-color: var(--primary-ad-color);
+    }
+    #hero {
+        padding-top: 3em;
+        margin-top: 4.7rem;
+        max-height: 429px;
+    }
+    .footer-nav {
+        flex-direction: row;
+        justify-content: space-evenly
+    }
+}
+
+@media screen and (min-width: 992px) {
+    #hero {
+        max-height: 534px;
+    }
+}
+
+
+/* XL */
+
+@media screen and (min-width: 1200px) {
+    #hero {
+        max-height: 634px;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    #hero {
+        max-height: 700px;
+    }
+}
+
+.pop-up-bg {
+    top: 0;
+    position: fixed;
+    width: 100vw;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 99;
+    display: none;
+}
+
+.popup-wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-wrapper .card {
+    width: 50%;
+    height: 200px;
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, .75) 10%, rgba(177, 19, 19, .75) 55%);
+}
+
+.pop-title {
+    font-family: ;
+}
+
+.active {
+    visibility: visible;
+}

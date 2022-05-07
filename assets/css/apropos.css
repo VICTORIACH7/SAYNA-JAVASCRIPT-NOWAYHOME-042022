@@ -1,0 +1,86 @@
+:root {
+    --primary-ad-color: #b11313;
+    --black-ad-color: #000000;
+    --white-ad-color: #ffffff;
+    --yellow-color: #f1c530;
+    --blue-color: #114c92;
+}
+
+body {
+    color: var(--white-ad-color);
+    background-color: var(--primary-ad-color);
+}
+
+.container {
+    position: relative;
+    z-index: 5;
+}
+
+#hero {
+    background-color: var(--yellow-color);
+}
+
+.imgSpider {
+    right: 0;
+    z-index: 0;
+    width: 300px;
+    position: absolute;
+    background-position: top right;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-image: url(../img/img55.png);
+}
+
+
+/* Design de la partie Antenne */
+
+#antenne {
+    padding: 3rem 0;
+}
+
+#antenne form {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#antenne input,
+#antenne textarea {
+    margin-top: 20px;
+    border: 1px solid white;
+    border-radius: 25px;
+}
+
+#antenne .btn.button2 {
+    border: 2px solid white;
+    display: block;
+    margin: 20px auto 0;
+    width: 150px;
+}
+
+#antenne input::placeholder,
+#antenne textarea::placeholder {
+    color: white;
+}
+
+#saynaxmarvel {
+    padding: 3rem 0;
+    background-color: var(--blue-color);
+}
+
+#saynaxmarvel .btn.button3 {
+    margin-top: 20px;
+    width: 150px;
+}
+
+@media screen and (min-width:768px) {
+    p {
+        text-align: justify;
+    }
+}
+
+.zoom {
+    transform: scale(1.1);
+    transition: all 1s ease-in-out;
+}

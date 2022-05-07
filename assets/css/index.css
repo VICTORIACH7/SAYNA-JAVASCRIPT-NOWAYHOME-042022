@@ -1,0 +1,194 @@
+:root {
+    --primary-ad-color: #b11313;
+    --black-ad-color: #000000;
+    --white-ad-color: #ffffff;
+    --blue-color: #114c92;
+}
+
+body {
+    background-repeat: no-repeat;
+    color: var(--white-ad-color);
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(177, 19, 19, 1) 25%);
+}
+
+#hero .container {
+    margin-top: 15%;
+}
+
+#hero {
+    background-size: 70% 60%;
+    background-position-x: -60%;
+    background-position-y: 7%;
+    background-repeat: no-repeat;
+    background-image: url("../img/home1.png");
+}
+
+.imgSpider {
+    position: absolute;
+    right: 0;
+    z-index: 0;
+    width: 300px;
+    background-position: top right;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-image: url("../img/home2.png");
+}
+
+#lesspiderman {
+    padding: 2.5rem 0;
+}
+
+#lesspiderman .card {
+    margin-bottom: 2.5rem;
+}
+
+#lesspiderman img {
+    margin: auto;
+    margin-bottom: 1.5rem;
+    height: auto;
+    display: block;
+    max-width: 90%;
+}
+
+#lesspiderman .card-body {
+    display: none;
+}
+
+#lesspiderman p {
+    text-align: center;
+}
+
+#lesspiderman ul {
+    margin: auto;
+    display: block;
+    width: fit-content;
+}
+
+#lesspiderman ul li {
+    text-align: center;
+}
+
+#spiderman {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+    background-size: contain;
+    background-position-x: left;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-color: var(--blue-color);
+    background-image: url("../img/img5.png");
+}
+
+#spiderman input {
+    margin-top: 1rem;
+    border-radius: 30px;
+}
+
+#spiderman input[type="submit"] {
+    width: 200px;
+    background-color: transparent;
+    padding: 10px 20px;
+}
+
+#spiderman input[type="text"],
+#spiderman input[type="email"] {
+    border-color: var(--white-ad-color);
+    border-radius: 30px;
+    color: var(--black-ad-color);
+    margin: 10px auto;
+    padding: 5px 10px;
+    width: 375px;
+}
+
+#spiderman input[type="text"]::placeholder,
+#spiderman input[type="email"]::placeholder {
+    color: rgba(41, 41, 41, 0.95)
+}
+
+#newsletter {
+    min-height: 30vw;
+    background-position: 250% 100%;
+    background-size: 80% 70%;
+    background-repeat: no-repeat;
+    background-image: url("../img/img6.png");
+}
+
+#newsletter input[type="text"],
+#newsletter input[type="email"] {
+    margin-bottom: 30px;
+    border: 1px solid var(--white-ad-color);
+    border-radius: 1.25rem;
+}
+
+#newsletter input[type="text"]::placeholder,
+#newsletter input[type="email"]::placeholder {
+    color: var(--white-ad-color);
+}
+
+#newsletter .form-check {
+    margin-top: 1rem;
+}
+
+#lesspiderman .button1,
+#spiderman .button3,
+#newsletter .button1 {
+    display: block;
+    margin: auto;
+}
+
+#newsletter .button2 {
+    background-color: var(--white-ad-color);
+    color: var(--black-ad-color);
+}
+
+@media screen and (max-width:375px) {
+    #spiderman .container div {
+        padding-top: 0.75rem;
+        padding-bottom: 0.75rem;
+    }
+    #spiderman .container div a {
+        font-size: small;
+        margin-top: 0.5rem;
+    }
+}
+
+@media screen and (min-width:768px) {
+    #lesspiderman p {
+        text-align: justify;
+        text-justify: inter-word;
+    }
+    #lesspiderman ul {
+        margin-left: 0;
+        display: block;
+        width: fit-content;
+    }
+    #lesspiderman ul li {
+        text-align: justify;
+    }
+    #newsletter {
+        min-height: 30vw;
+        background-size: contain;
+        background-position: right;
+        background-repeat: no-repeat;
+        background-image: url("../img/img6.png");
+    }
+    #lesspiderman .card {
+        margin-bottom: 0;
+    }
+    .imgSpider {
+        width: 400px;
+    }
+}
+
+@media screen and (min-width:990px) {
+    .imgSpider {
+        width: 600px;
+    }
+}
+
+#hero .container,
+#lesspiderman .container,
+#spiderman .container {
+    position: relative;
+    z-index: 1;
+}
